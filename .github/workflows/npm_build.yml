@@ -21,14 +21,10 @@ jobs:
     - name: Install dependencies
       run: |
         npm ci
-        find * -name https://github.com/VSIVAKALYAN/robot-shop/tree/master/cart/package.json
+        https://github.com/VSIVAKALYAN/robot-shop/tree/master/cart/package.json
 
     - name: Build
-      run: |
-        npm run build
-        find * -name https://github.com/VSIVAKALYAN/robot-shop/tree/master/cart/package.json
+      run: npm run build
 
     - name: Test
-      run: |
-        npm test
-        find * -name https://github.com/VSIVAKALYAN/robot-shop/tree/master/cart/package.json
+      run: npm test
