@@ -18,10 +18,11 @@ jobs:
       with:
         node-version: 14
 
-    - name: Install dependencies
-      run: |
-        npm ci
-        https://github.com/VSIVAKALYAN/robot-shop/tree/master/cart/package.json
+    - name: Install npm dependencies
+      run: npm install
+      
+    - name: npm init
+      run: npm init -y
 
     - name: Build
       run: npm run build
