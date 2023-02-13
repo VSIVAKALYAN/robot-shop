@@ -4,7 +4,7 @@
   "description": "cart REST API",
   "main": "server.js",
   "scripts": {
-    "build": "npm run build"
+    "build": "docker-compose up -d"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "SteveW",
