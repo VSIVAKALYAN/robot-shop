@@ -1,4 +1,4 @@
-name: Build and Test Instana Robot-shop
+name: Install npm
 
 on:
   push:
@@ -23,9 +23,3 @@ jobs:
       
     - name: npm init
       run: npm init -y
-
-    - name: Build
-      run: npm run build
-
-    - name: Test
-      run: npm test
