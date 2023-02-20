@@ -19,6 +19,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: robot-shop/cart/Dockerfile
+          context: robot-shop/cart/
           push: true
           tags: sivakalyan1998/rrr:latest
