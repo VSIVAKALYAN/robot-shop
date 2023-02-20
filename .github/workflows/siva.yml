@@ -29,6 +29,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./Dockerfile
+          file: VSIVAKALYAN/robot-shop/cart/
           push: true
           tags: sivakalyan1998/rrr:latest
