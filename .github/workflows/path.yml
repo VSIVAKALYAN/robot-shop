@@ -19,6 +19,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./cart/Dockerfile
+          file: ./cart/Dockerfile,server.js,package.json
           push: true
           tags: sivakalyan1998/rrr:latest
