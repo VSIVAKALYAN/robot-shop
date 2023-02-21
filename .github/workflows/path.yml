@@ -20,7 +20,5 @@ jobs:
         with:
           context: .
           file: ./cart/Dockerfile
-          file: ./cart/package.json
-          file: ./cart/server.js
           push: true
-          tags: sivakalyan1998/rrr:latest
+          tags: sivakalyan1998/github_actions:latest
