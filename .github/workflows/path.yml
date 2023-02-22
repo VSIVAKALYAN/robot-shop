@@ -21,4 +21,4 @@ jobs:
           context: .
           file: ./cart/Dockerfile
           push: true
-          tags: sivakalyan1998/github_actions:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/github_actions:latest
