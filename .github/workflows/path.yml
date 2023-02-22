@@ -19,6 +19,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./cart/Dockerfile
+          file: ./cart/*
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/github_actions:latest
