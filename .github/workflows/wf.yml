@@ -22,5 +22,5 @@ jobs:
       - name: Build and Push Docker image
         run: |
           cd ./cart/
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/Github_Actions:latest .
-          docker push ${{ secrets.DOCKER_USERNAME }}/Github_Actions:latest
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/github_actions:latest .
+          docker push ${{ secrets.DOCKER_USERNAME }}/github_actions:latest
