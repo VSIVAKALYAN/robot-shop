@@ -1,0 +1,17 @@
+name: Dev Deployment
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-terraform:
+    uses: ./.github/workflows/terraform-template.yml
+    with:
+      terraform_version: '1.12.2'
+
+  list-users:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: execute-command
+          run: |
+            cat /etc/passwd
