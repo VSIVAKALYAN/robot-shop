@@ -10,6 +10,7 @@ jobs:
       terraform_version: '1.12.2'
 
   list-users:
+    needs: call-terraform
     runs-on: ubuntu-latest
     steps: 
       - name: execute-command
