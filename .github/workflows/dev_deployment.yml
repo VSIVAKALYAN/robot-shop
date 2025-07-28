@@ -5,7 +5,7 @@ on:
 
 jobs:
   call-terraform:
-    uses: ./.github/workflows/terraform-template.yml
+    uses: ./.github/workflows/Reusable_Terraform.yml
     with:
       terraform_version: '1.12.2'
 
