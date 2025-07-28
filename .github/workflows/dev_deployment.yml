@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: execute-command
-          run: |
+        run: |
             cat /etc/passwd
