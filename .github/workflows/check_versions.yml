@@ -1,4 +1,4 @@
-name: Check AWS CLI & Terraform Versions
+name: Terraform with AWS
 
 on:
   workflow_dispatch:
@@ -15,8 +15,13 @@ jobs:
         run: |
           echo "☁️ AWS CLI version installed on runner:"
           aws --version
+
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.12.2
   
-      - name: Print preinstalled Terraform version
+      - name: Print Terraform version
         run: |
           echo "📦 Terraform version installed on runner:"
           terraform -v
