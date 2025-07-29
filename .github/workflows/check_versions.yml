@@ -1,4 +1,4 @@
-name: Check Preinstalled Terraform and AWS CLI Versions
+name: Check Preinstalled AWS CLI Versions
 
 on:
   workflow_dispatch:
@@ -10,11 +10,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Print preinstalled Terraform version
-        run: |
-          echo "📦 Terraform version installed on runner:"
-          terraform -v
 
       - name: Print preinstalled AWS CLI version
         run: |
